@@ -1,0 +1,5 @@
+splt < spanish/nazarin.txt | spanish/nazarin.txt | wc | wstat
+cat spanish/* | splt | wc | wstat
+cat spanish/* | splt | head -n 100 | wc | wstat
+cat spanish/* | splt | tail -n 100 | wc | wstat
+cat spanish/* | splt | sort | uniq | wc | wstat
