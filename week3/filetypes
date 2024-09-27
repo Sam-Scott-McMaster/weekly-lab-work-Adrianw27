@@ -1,0 +1,24 @@
+# Adrian Winter, 400495595, Sept. 27, 2024
+#
+# A bash script that determines if given arguments are valid paths, and outputs if they are directories, files, unknown, and stderr for invalid paths.
+
+
+#!/bin/bash
+if [[ $# -eq 0 ]]
+then
+	echo "No arguments received. Aborting." >&2
+	exit 1
+else
+	for arg in "$@"
+	do 
+		if [[ -d $arg ]]
+		then
+			echo "directory: $arg" 
+		elif [[ -f $arg ]]
+		then
+			echo "file: $arg"
+		else
+			echo "unknown: $arg"
+		fi
+	done
+fi

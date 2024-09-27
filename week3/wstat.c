@@ -1,3 +1,8 @@
+/* Adrian Winter, 400495595, Sept. 24, 2024
+*
+* A simple program that finds the average amount of characters for all lines of the input. The program will return a stderr if the given arguments are invalid.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
