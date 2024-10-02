@@ -1,0 +1,52 @@
+1. 
+REGEX
+Matching strings: REGEX, RREGEXX, HI REGEX
+Non-matching strings: Regex, RE GEX, ReGEX
+
+^re*ge+x
+Matching strings: regex, rgex, regeex
+Non matching strings: rregex, rgx, reggex
+
+[^regex]
+Matching strings: hi, o, amazing
+Non matching strings: regex, e, reg
+
+(reg){0,2}ex
+Matching strings: reg, regex, regregex
+Non matching strings: regx, x, rx
+
+re?g?e?x
+Matching strings: rx, regex, reex
+Non matching strings: reegex, regeex, reggex
+
+^(reg|REG)(ex)\2\1$
+Matching strings: regexexreg, REGexexREG
+Non matching strings: REGexexreg, regexexREG, regex
+
+2. 
+a(ab)*a
+Matching: aaba, aabbaa, aabababa
+
+ab+c
+Matching: abc
+
+a.[bc]+
+Matching: abc, abbbbbbbb, azc, abcbcbcbc, asccbbbbcbcccc
+
+abc|xyz
+Matching: abc, xyz, abc|xyz
+
+[a-z]+[\.\?!]
+Matching: Battle!, swamping., jump up., undulate?, is.?
+
+[a-zA-Z]*[^,]=
+Matching: Putt=, FIdDlE7h=, Brittle=, Other.=
+
+[a-z][\.\?!]\s+[A-Z]
+Matching: g.  H, i? J
+
+<[^>]+> 
+Matching: <an xml tag>, <opentag>, <closetag>, </closetag>, <with attribute="77">
+
+(very )+(important )?(tall|well-dressed) person
+Matching: very very well-dressed person

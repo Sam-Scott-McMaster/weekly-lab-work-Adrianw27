@@ -1,0 +1,25 @@
+# Adrian Winter, 400495595, Sept. 27, 2024
+#
+# A bash script that splits all words from standard input onto seperate lines until EOF and uses regex to make sure all words are valid.
+
+#!/bin/bash
+
+if [[ $# -gt 0 ]]
+then
+	echo "No arguments accepted. Aborting." >&2
+	exit 1
+else
+	while read line
+	do 
+		words=($line)
+		for word in "${words[@]}"
+		do
+			if [[ $word =~ ^[A-Za-z0-9]+$ ]]
+				then 
+					echo $word
+			fi
+		done
+	done
+fi
+
+
