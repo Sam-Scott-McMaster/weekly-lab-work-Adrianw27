@@ -1,0 +1,17 @@
+I am going to compare C to another language I have used extensively: Java
+
+Advantage:
+One advantage of C is the use of pointers, which allow you to direct manipulate memory.
+Pointers give the user a lot of control over dynamic data structures such as trees, and they help memory efficiency by passing references rather than copying entire objects.
+Java, on the other hand, does not allow the use of pointers, which can make code less efficient in certain scenarios.
+
+Disadvantage:
+One disadvantage that C has which Java does not is that it does not have the property of inheritance.
+This is because C does not support object-oriented programming.
+Inheritance is very useful to create resuseable and modular code, and can be used to relate things according to the real world.
+This disadvantage also applies to other OOP principles that cannot be used in C.
+
+Preference:
+Overall, I prefer to use Java, simply because I am more comfortable using it. 
+This could certainly change the more I use C and understand its benefits, but I prefer programming in an object-oriented language.
+I also find Java to be a much easier language to debug, and I like it for its extensive library.
