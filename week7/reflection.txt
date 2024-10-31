@@ -1,0 +1,10 @@
+One advantage I see with pointer arithmetic is efficiency. 
+It is faster to use a pointer because it directly manipulates.
+You do not need to use index calculations when you use a pointer.
+
+One disadvantage is readability. Pointer arithmetic is harder to understand
+than simply processing the array. This could make it error-prone, harder to debug, etc.
+
+Personally I prefer array indexing because I find the code becomes more understanable, and 
+easier to edit and debug. With that being said I do like how easy it is to 
+manipulate data structures like arrays with pointers.
