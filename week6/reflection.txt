@@ -1,0 +1,13 @@
+The & operator allows you to pass a pointer as an argument,
+introuding a side effect of shared access to memory locations.
+I think this feature is extremely useful as it allows you to modify 
+out-of-scope variables extremely easily.
+
+The advantages are efficient data modification, as you can edit multiple
+variables without returning each one, memory efficiency, as you do not 
+have to pass as many variables, and flexibility, as a function can carry out
+multiple tasks with one return statement.
+
+The disadvantages are reduced testability, as their behaviour is based on values of
+external variables, risk of bugs, as variables can be modified unexpectedly,
+and memoru safety issues if the function is called incorrectly.
