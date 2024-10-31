@@ -5,6 +5,12 @@
 
 #include <stdio.h>
 
+/* hailstone
+*
+* Parameters: A long n
+* Recursive function to loop through values in a hailstone function.
+* Returns: in the base cases of invalid input, and 1
+*/
 void hailstone(long n) {
     if (n <= 0) {
         printf("Please enter a positive integer.\n");
@@ -25,6 +31,12 @@ void hailstone(long n) {
     }
 }
 
+/* main function
+*
+* Parameters: none
+* Takes input and calls hailstone
+* Returns: 0 after execution
+*/
 int main() {
     long n;
     printf("Enter a positive integer: ");

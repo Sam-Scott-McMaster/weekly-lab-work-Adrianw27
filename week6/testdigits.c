@@ -1,3 +1,8 @@
+/* Adrian Winter, 400495595, Oct. 24, 2024
+*
+* Contains the test case for digits
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "digits.h"
