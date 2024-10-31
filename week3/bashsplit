@@ -11,8 +11,7 @@ then
 else
 	while read line
 	do 
-		words=($line)
-		for word in "${words[@]}"
+		for word in $line
 		do
 			echo "$word"
 		done
