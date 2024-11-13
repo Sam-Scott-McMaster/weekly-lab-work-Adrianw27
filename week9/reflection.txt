@@ -1,0 +1,26 @@
+a. It is generally a good idea to remove function calls from a program.
+With function calls, the program took 3.7685 seconds to complete.
+Using parameterized macros, it took 3.6835 seconds. 
+With the boolean comparisons, it took 3.4781 seconds. 
+With these times, it is clear that the programs without function calls were both faster than the one with function calls.
+Additionally, when you look at gprof outputs, the program with the function calls has a degree of 100 times more calls.
+This is much less efficient and it shows in the time results.
+The main trade off I see for the performance improvement in time is modularity in the source code.
+The function calls make the code more modular, easier to read and understand, which makes it easier to modify, test, debug, maintain.
+
+b. I think it is better to just replace the function call with the equivalent code.
+The first reason is performace. 
+The parameterized macros took 3.6835 seconds while the equivalent code replacement took 3.4781 seconds.
+There is a clear difference in the time efficiency of the two methods.
+The second reason I would chose the equivalent code replacement is to avoid potential side effects.
+Using boolean comparisons is much simpler than parameterized macros, which prevents potential type errors, or data misuse.
+
+c. I got a much better performance improving the algorithm.
+Although improving the algorithm resulted in more function calls as seen in the gprof reports, 100% of the time was spent in the quick check function, as opposed to 100% of the time being spent in the is prime function when function calls were removed.
+Since quickcheck has much simpler computations than isprime, the total time of the program was much less with the improved algorithm.
+The cumulative time in the improved algorithm was 0.01 seconds as opposed to 3.5/3.48 in the code without function calls.
+
+
+d. It could be a good idea to remove function calls if you have already optimized the algorithm.
+This would further optimize the codes performance.
+This may not have as much of an impact as algorithm optimatization, but if a function is being called a significant amount of times it can definitely provide a performance boost.
